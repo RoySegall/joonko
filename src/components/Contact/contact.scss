@@ -33,19 +33,33 @@
     flex-direction: column;
     justify-content: space-between;
 
-    input {
-      border: none;
-      border-bottom: 1px solid var(--base-color);
-      margin-bottom: 1em;
-      margin-top: 1em;
+
+
+    .input-wrapper {
+      display: flex;
+      flex-direction: column;
       padding: .5em;
       padding-left: .25em;
-      font-size: 1em;
+      margin-bottom: 1em;
+      margin-top: 1em;
 
-      &::placeholder {
-        color: var(--placeholder-color);
-        font-weight: 100;
-        font-size: .95em;
+      .form-error {
+        font-size: .8em;
+        padding-top: .1em;
+        text-align: left;
+        color: var(--error-color);
+      }
+
+      input {
+        border: none;
+        border-bottom: 1px solid var(--base-color);
+        font-size: 1em;
+
+        &::placeholder {
+          color: var(--placeholder-color);
+          font-weight: 100;
+          font-size: .95em;
+        }
       }
     }
   }
@@ -63,6 +77,7 @@
       color: white;
       font-weight: 100;
       width: 50%;
+      text-decoration: none;
 
       margin: 0 auto;
       padding: 1em;
@@ -74,12 +89,21 @@
     padding-top: 1em;
     display: flex;
 
+    input {
+      margin: 0;
+      padding: 0;
+    }
+
     p {
       margin: 0;
       font-weight: 100;
       font-size: .8em;
       text-align: left;
       padding-left: .25em;
+    }
+
+    .required {
+      border: solid 1px var(--error-color);
     }
   }
 
