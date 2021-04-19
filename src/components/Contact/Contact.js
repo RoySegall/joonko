@@ -15,6 +15,7 @@ export default () => {
 
   const handleSubmit = async () => {
     dispatchError({ type: RESET_ERRORS});
+
     let formValid = true;
     Object.entries(formValues).forEach(([key, value]) => {
       if (!value) {
@@ -22,14 +23,14 @@ export default () => {
         formValid = false;
       }
     });
-    console.log(termsAgree);
+
     if (!termsAgree) {
       dispatchError({ type: ADD_ERROR, error: {'terms': 'The field is required'}});
       formValid = false;
     }
 
     if (formValid) {
-      console.log('Fire request');
+      console.log('Fire request! 💪🍕🚀');
     }
   };
 
@@ -50,7 +51,6 @@ export default () => {
         {fullNameError && <FormError>{fullNameError}</FormError>}
       </div>
 
-
       <div className="input-wrapper">
         <input
           placeholder="Company name"
@@ -66,7 +66,6 @@ export default () => {
         />
         {phoneError && <FormError>{phoneError}</FormError>}
       </div>
-
 
       <div className="input-wrapper">
         <input

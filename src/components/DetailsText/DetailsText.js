@@ -8,6 +8,7 @@ export default () => {
     'An increase in diversity as a result of remote recruitment',
     'Money saved on operational costs and salary negotiations'
   ];
+
   return <section className="details-text">
     <p>
       The results are in, and the verdict? Remote is here to stay. Thanks to a global pandemic companies have had to
