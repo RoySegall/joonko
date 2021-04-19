@@ -1,0 +1,29 @@
+:root {
+  --base-color: #010A60;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  color: var(--base-color);
+  font-size: 16px;
+}
+
+#root {
+  min-height: 100vh;
+  padding-top: 15vh;
+
+  main {
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+}
+

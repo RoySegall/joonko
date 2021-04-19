@@ -1,0 +1,23 @@
+.details {
+
+  .button {
+    color: var(--base-color);
+    width: 60%;
+    display: block;
+    box-shadow: 0 3px 6px #00000029;
+    background: white;
+    border: none;
+    padding: 1em;
+    padding-left: 1.25em;
+    text-align: left;
+    font-weight: 100;
+    font-size: 1.15em;
+    letter-spacing: 1.5px;
+    display: flex;
+    justify-content: space-between;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
