@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import "./details.scss";
 import DetailsText from "../DetailsText/DetailsText";
-import {Arrow} from "../Arrows/Arrows";
+import {Arrow} from "../Icons/Icons";
 
 export default () => {
   const [showDetails, setShowDetails] = useState(false);

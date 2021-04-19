@@ -17,12 +17,47 @@ body {
   main {
     width: 80vw;
     margin: auto;
+    position: relative;
 
     .wrapper {
       min-height: 60vh;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+    }
+
+    .icon {
+      position: absolute;
+      z-index: -1;
+
+      &.Ellipse {
+        top: 20em;
+        right: 0;
+      }
+
+      &.XBig {
+        top: 1em;
+        right: -5em;
+      }
+
+      &.XSmall {
+        bottom: -10em;
+        right: 40em;
+      }
+
+      &.RectangleYellow {
+        bottom: 10em;
+        right: 40em;
+      }
+
+      &.RectanglePink {
+        right: 35em;
+      }
+
+      &.RectanglePurple {
+        left: -8em;
+        top: 10em;
+      }
     }
   }
 }
