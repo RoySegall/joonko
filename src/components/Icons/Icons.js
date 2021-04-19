@@ -11,7 +11,7 @@ import "./arrow.scss";
 
 export const Arrow = ({direction = 'down'}) => <><img src={arrowDown} className={`arrow ${direction}`} alt="Arrow" /></>
 export const Ellipse = () => <><img src={EllipseIcon} className={`icon Ellipse`} alt="Arrow" /></>
-export const Help = () => <><img src={HelpIcon} className={`icon Help`} alt="Arrow" /></>
+export const Help = () => <><img src={HelpIcon} className={``} alt="Arrow" /></>
 export const RectanglePink = () => <><img src={RectanglePinkIcon} className={`icon RectanglePink`} alt="Arrow" /></>
 export const RectanglePurple = () => <><img src={RectanglePurpleIcon} className={`icon RectanglePurple`} alt="Arrow" /></>
 export const RectangleYellow = () => <><img src={RectangleYellowIcon} className={`icon RectangleYellow`} alt="Arrow" /></>
